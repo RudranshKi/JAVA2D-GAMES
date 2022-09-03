@@ -1,8 +1,8 @@
 # JAVA2D-GAMES
-** BASIC JAVA 2D GAMES**
+**BASIC JAVA 2D GAMES**
 
 
-** AIM TRAINER **
+**AIM TRAINER**
 
 AIM Trainer preview
 
