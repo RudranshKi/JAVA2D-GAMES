@@ -22,3 +22,15 @@
 
 
 ![pong](https://github.com/RudranshKi/JAVA2D-GAMES/blob/main/pong.gif)
+
+
+
+
+**SNAKE**
+
+
+
+
+
+
+![snek](https://github.com/RudranshKi/JAVA2D-GAMES/blob/main/snake.gif)
