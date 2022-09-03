@@ -21,6 +21,7 @@ public class snekpanel extends JPanel implements ActionListener{
 	int x[] =new int[blockSize];
 	int y[] =new int[blockSize];
 	int Score=0;
+	int screenCount= 0;
 	
 	snekpanel(){
 		this.setPreferredSize(new Dimension(game_width,game_height));
@@ -33,7 +34,7 @@ public class snekpanel extends JPanel implements ActionListener{
 	
 	public void startNew() {
 		newMeat();
-		run = true;
+		//run = true;
 		timer = new Timer(delay,this);
 		timer.start();
 	}
@@ -55,20 +56,25 @@ public class snekpanel extends JPanel implements ActionListener{
 		for (int i = initialBody ; i > 0 ; i--) {
 			if ((x[0] == x[i]) && y[0] == y[i]) {
 				run = false;
+				screenCount = 2;
 			}
 		}
 
 		if (x[0] < 0 ) {
 			run = false;
+			screenCount = 2;
 		}
 		if ( x[0] > game_width) {
 			run = false;
+			screenCount = 2;
 		}
 		if (y[0] > game_height) {
 			run = false;
+			screenCount = 2;
 		}
 		if (y[0] < 0) {
 			run = false;
+			screenCount = 2;
 		}
 	}
 	
@@ -97,12 +103,18 @@ public class snekpanel extends JPanel implements ActionListener{
 			g.setFont(new Font("SANS_SERIF", Font.ITALIC,30));
 			g.drawString("SCORE-",game_width/2-100,40);
 			g.drawString(Integer.toString(Score),game_width/2 + 20,40);
-			//timer.stop();
 		}
 		else {
+			if (screenCount == 0 ) {
+				g.setColor(Color.white);
+				g.setFont(new Font ("SANS",Font.BOLD,30));
+				g.drawString("Press ENTER to play",game_width/2-140,game_height/2);
+			}
+			else {
 			g.setColor(Color.RED);
 			g.setFont(new Font("SANS_SERIF", Font.ITALIC,50));
 			g.drawString("THE END - "+Integer.toString(Score),game_width/2-140,game_height/2);
+			}
 		}
 	}
 	
@@ -163,6 +175,10 @@ public class snekpanel extends JPanel implements ActionListener{
 					dir = 'D';
 				}
 				break;
+			}
+			
+			if (e.getKeyCode() == 10) {
+				run = true;
 			}
 		}
 	
