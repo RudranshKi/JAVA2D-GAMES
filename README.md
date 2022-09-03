@@ -4,4 +4,5 @@
 
 ** AIM TRAINER **
 
-[!(AIM Trainer preview)](https://gifyu.com/image/SwQsq)
+#AIM Trainer preview
+![](https://gifyu.com/image/SwQsq)
