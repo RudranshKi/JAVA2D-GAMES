@@ -4,5 +4,7 @@
 
 ** AIM TRAINER **
 
-#AIM Trainer preview
-[![aim trainer](https://github.com/RudranshKi/JAVA2D-GAMES/blob/main/unknown_2022.09.03-18.53_1.gif)]
+AIM Trainer preview
+
+
+[[aim trainer](https://github.com/RudranshKi/JAVA2D-GAMES/blob/main/unknown_2022.09.03-18.53_1.gif)]
