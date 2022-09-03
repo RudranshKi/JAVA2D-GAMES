@@ -6,9 +6,10 @@ import javax.swing.*;
 
 public class gameFrame extends JFrame {
 	gamePanel gp = new gamePanel();
+	ImageIcon icon = new ImageIcon("ping-pong.png");
 	gameFrame(){
 		this.setTitle("PONG");
-//		this.setLocationRelativeTo(null);
+		this.setIconImage(icon.getImage());
 		this.add(gp);
 		this.setVisible(true);
 		this.setResizable(false);
@@ -17,3 +18,4 @@ public class gameFrame extends JFrame {
 		this.pack();
 	}
 }
+
